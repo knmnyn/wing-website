@@ -3,8 +3,8 @@ title: 'Cost-Efficient LLM-Driven Scientific Discovery'
 summary: 'We study how to coordinate lightweight and frontier LLMs in evolutionary search for scientific discovery, staying competitive with frontier-model baselines at a fraction of the API cost.'
 tags: ['Scientific Discovery', 'Evolutionary Search', 'Large Language Models', 'AI4Science']
 year: 2026
-# Project page creation date; each publication retains its own publication date.
-date: '2026-11-03'
+# Publication date of hieu-etal-2026-specevo.
+date: '2026-10-01'
 featured: true
 # WING contributors; full author lists appear in the associated publications.
 authors: ['haminhhieu', 'tongyao', 'long', 'min']

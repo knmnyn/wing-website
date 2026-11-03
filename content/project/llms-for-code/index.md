@@ -3,8 +3,8 @@ title: 'LLMs for Code: Faithful and Minimal Code Editing'
 summary: 'We study whether LLM code repairs stay minimal and faithful to the original program, rather than only whether they pass the tests, and how models can be trained to edit code minimally.'
 tags: ['Code Generation', 'Code Repair', 'Large Language Models', 'Reinforcement Learning']
 year: 2026
-# Project page creation date; each publication retains its own publication date.
-date: '2026-11-03'
+# Publication date of zhu-etal-2026-models.
+date: '2026-10-01'
 featured: true
 # WING contributors; full author lists appear in the associated publications.
 authors: ['tongyao', 'weihern', 'min']

@@ -3,8 +3,8 @@ title: 'Code-Mixed and Multilingual Information Retrieval'
 summary: 'Multilingual users often mix languages in their search queries, yet dense retrievers are usually evaluated on monolingual ones. We study how mixed-language queries behave in multilingual dense retrieval, and when mixing helps or hurts.'
 tags: ['Information Retrieval', 'Dense Retrieval', 'Multilingual', 'Code-Mixing']
 year: 2026
-# Project page creation date; each publication retains its own publication date.
-date: '2026-11-03'
+# Publication date of zhu-etal-2026-mixing.
+date: '2026-07-01'
 featured: true
 # WING contributors; full author lists appear in the associated publications.
 authors: ['tongyao', 'chaoming', 'min']

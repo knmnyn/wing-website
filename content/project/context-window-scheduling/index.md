@@ -3,8 +3,8 @@ title: 'Context Window Scheduling for Efficient LLM Pretraining'
 summary: 'Longer pretraining context windows are not always better. We study how to schedule the context window during LLM pretraining to balance long-context capability with training efficiency.'
 tags: ['Large Language Models', 'Pretraining', 'Long Context', 'Efficiency']
 year: 2025
-# Project page creation date; each publication retains its own publication date.
-date: '2026-11-03'
+# Publication date of skyladder-2025.
+date: '2025-12-01'
 featured: true
 # WING contributors; full author lists appear in the associated publications.
 authors: ['tongyao', 'qian', 'min']

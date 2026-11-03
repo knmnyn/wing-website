@@ -5,7 +5,7 @@ authors:
   - weihern
   - min
 author_notes: [Equal Contribution, Equal Contribution, Corresponding Author]
-# EMNLP 2026 was held in October; day defaults to the first of the month.
+# ACL Anthology lists the EMNLP 2026 proceedings as October; day defaults to the first of the month.
 date: '2026-10-01'
 publishDate: '2026-11-03T00:00:00Z'
 publication_types: ['paper-conference']

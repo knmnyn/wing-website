@@ -13,7 +13,7 @@ publication: '*arXiv preprint arXiv:2610.28706*'
 abstract: >-
   SpecEvo is a multi-LLM evolutionary framework for scientific discovery that explores with lightweight models and consolidates with frontier reasoning. Parallel Speculators propose programs, a trajectory-aware Advisor turns successes and failures into reusable guidance, and a frontier Navigator intervenes at sparse checkpoints, so that model coordination adapts as the search progresses rather than following fixed roles.
   Across 176 tasks in four domains, SpecEvo is competitive with frontier-model baselines on mathematical discovery and systems optimization at up to 80% lower API cost, achieves a 3.8% higher mean normalized score than the strongest baseline on CO-Bench combinatorial optimization, and attains the lowest NMSE in all eight LSR-Synth equation discovery settings among the main evolutionary baselines.
-summary: 'A multi-LLM evolutionary search framework that pairs lightweight Speculators with a frontier Navigator, matching frontier-model baselines on scientific discovery tasks at a fraction of the API cost.'
+summary: 'A multi-LLM evolutionary search framework that pairs lightweight Speculators with a frontier Navigator, staying competitive with frontier-model baselines on mathematical discovery and systems optimization at up to 80% lower API cost.'
 tags: ['Scientific Discovery', 'Evolutionary Search', 'Program Search', 'Large Language Models']
 featured: false
 doi: 10.48550/arXiv.2610.28706

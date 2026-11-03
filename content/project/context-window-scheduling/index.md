@@ -15,6 +15,8 @@ image:
 links:
   - name: 'Paper'
     url: 'https://papers.nips.cc/paper_files/paper/2025/hash/b837547467ea02deebdc9677d7f5a0be-Abstract-Conference.html'
+  - name: 'arXiv'
+    url: 'https://arxiv.org/abs/2503.15450'
   - name: 'Code'
     url: 'https://github.com/sail-sg/SkyLadder'
   - name: 'Slides'

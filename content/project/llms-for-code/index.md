@@ -9,7 +9,7 @@ featured: true
 # WING contributors; full author lists appear in the associated publications.
 authors: ['tongyao', 'weihern', 'min']
 image:
-  caption: 'Frontier models under generic vs. explicit preservation prompts.'
+  caption: 'Every patch passes the tests, but edit fidelity varies widely.'
   focal_point: 'Smart'
   preview_only: false
 links:

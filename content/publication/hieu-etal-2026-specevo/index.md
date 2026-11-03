@@ -26,5 +26,5 @@ image:
   caption: 'SpecEvo: parallel Speculators, a trajectory-aware Advisor, and an adaptive Navigator.'
   focal_point: 'Smart'
   preview_only: false
-projects: ['llms-for-code']
+projects: ['llm-scientific-discovery']
 ---

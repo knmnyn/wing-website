@@ -1,6 +1,6 @@
 ---
 title: "Yisong Miao Presents His Vector Institute Research Internship Work (with UBC NLP) at the NUS SRI Event"
-event: Yisong Presentes CAPRI at NUS SRI Seminar
+event: CAPRI at the NUS SRI Seminar
 
 location: "COM1, Cerebro Room"
 address:

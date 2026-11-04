@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ partial "page_header.html" . }}
+  <div class="container wing-gallery">
+    {{ with site.GetPage "/gallery" }}
+      <p><a href="{{ .RelPermalink }}#year-{{ $.Date.Format "2006" }}">Back to the {{ $.Date.Format "2006" }} gallery</a></p>
+    {{ end }}
+    {{ partial "gallery/photo.html" (dict "photo" . "eager" true) }}
+    {{ with .Params.source_page }}
+      {{ with site.GetPage . }}
+        <p class="wing-gallery-source">Original coverage · <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

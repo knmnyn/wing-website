@@ -16,6 +16,9 @@ main:
   - name: Events
     url: event
     weight: 40
+  - name: Gallery
+    pageRef: /gallery
+    weight: 45
   - name: Publications
     url: publication
     weight: 50

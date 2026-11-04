@@ -1,0 +1,35 @@
+{{ define "main" }}
+  {{ $tag := partial "gallery/tag.html" . }}
+  <div class="container wing-gallery wing-gallery-tag-page">
+    <p><a href="{{ .Parent.RelPermalink }}">All gallery tags</a></p>
+    <h1>{{ $tag.label }}</h1>
+    {{ if eq $tag.kind "year" }}
+      <p><a href="{{ $tag.url }}">Browse the {{ $tag.label }} carousel</a></p>
+    {{ else }}
+      <p>{{ $tag.kind | title }} page · <a href="{{ $tag.url }}">{{ $tag.page.Title }}</a></p>
+    {{ end }}
+    {{ if ne $tag.kind "event" }}
+      {{ $events := dict }}
+      {{ range .Pages }}
+        {{ range .GetTerms "gallery-tags" }}
+          {{ if hasPrefix .Data.Term "event-" }}{{ $events = merge $events (dict .Data.Term .) }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with $events }}
+        <h2>Related events</h2>
+        <ul>
+          {{ range . }}
+            {{ $event := partial "gallery/tag.html" . }}
+            <li><a href="{{ $event.url }}">{{ $event.label }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+    <h2>Photos</h2>
+    <ul>
+      {{ range .Pages.ByDate.Reverse }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="text-muted">· {{ .Date.Format "2 Jan 2006" }}</span></li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

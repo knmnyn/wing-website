@@ -1,0 +1,31 @@
+{{ if .photos }}
+  <div class="wing-carousel" data-carousel="{{ .interval }}" role="region" aria-roledescription="carousel"
+    {{ with .labelledby }}aria-labelledby="{{ . }}"{{ else }}aria-label="{{ .label }}"{{ end }}>
+    {{ if gt (len .photos) 1 }}
+      <div class="wing-carousel-controls" data-carousel-controls hidden>
+        <div class="wing-carousel-buttons">
+          <button class="wing-carousel-arrow" type="button" data-carousel-previous aria-label="Previous photo">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 5-5 5 5 5"/></svg>
+          </button>
+          <button class="wing-carousel-arrow" type="button" data-carousel-next aria-label="Next photo">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5 5 5-5 5"/></svg>
+          </button>
+          <div class="wing-carousel-dots" role="group" aria-label="Choose a photo">
+            {{ range $index, $photo := .photos }}
+              <button type="button" data-carousel-dot aria-label="Show photo {{ add $index 1 }}: {{ $photo.Title }}"></button>
+            {{ end }}
+          </div>
+          <button class="wing-carousel-pause" type="button" data-carousel-pause aria-label="Pause slideshow">Pause</button>
+        </div>
+      </div>
+      <span class="sr-only" data-carousel-announcement role="status"></span>
+    {{ end }}
+    <div class="wing-carousel-slides">
+      {{ range $index, $photo := .photos }}
+        <div data-carousel-slide>
+          {{ partial "gallery/photo.html" (dict "photo" $photo "hero" $.hero "eager" (and $.hero (eq $index 0)) "link" true) }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

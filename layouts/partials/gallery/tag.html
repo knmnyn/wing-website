@@ -1,0 +1,26 @@
+{{/* Tag keys are <kind>-<content directory>, or year-YYYY. */}}
+{{ $term := .Data.Term }}
+{{ $kind := index (split $term "-") 0 }}
+{{ $key := strings.TrimPrefix (printf "%s-" $kind) $term }}
+{{ $sections := dict "event" "event" "person" "authors" "project" "project" }}
+{{ $label := $key }}
+{{ $page := false }}
+{{ if eq $kind "year" }}
+  {{ $page = site.GetPage "/gallery" }}
+{{ else }}
+  {{ with index $sections $kind }}
+    {{ $page = site.GetPage (printf "/%s/%s" . $key) }}
+  {{ end }}
+  {{ if $page }}
+    {{ $label = $page.LinkTitle }}
+    {{ if eq $kind "event" }}{{ $label = or $page.Params.event $label }}{{ end }}
+  {{ else }}
+    {{ errorf "Gallery tag %q does not resolve to an event, person, project, or year" $term }}
+  {{ end }}
+{{ end }}
+{{ $url := "" }}
+{{ with $page }}
+  {{ $url = .RelPermalink }}
+  {{ if eq $kind "year" }}{{ $url = printf "%s#year-%s" $url $key }}{{ end }}
+{{ end }}
+{{ return (dict "kind" $kind "label" $label "page" $page "url" $url) }}

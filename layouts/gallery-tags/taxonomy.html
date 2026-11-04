@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <div class="container wing-gallery wing-gallery-tag-page">
+    {{ with site.GetPage "/gallery" }}<p><a href="{{ .RelPermalink }}">Back to the gallery</a></p>{{ end }}
+    <h1>Gallery tags</h1>
+    {{ $tags := slice }}
+    {{ range .Pages }}
+      {{ $tag := partial "gallery/tag.html" . }}
+      {{ $tags = $tags | append (merge $tag (dict "term_url" .RelPermalink)) }}
+    {{ end }}
+    {{ range $group := slice (dict "kind" "year" "heading" "Years") (dict "kind" "event" "heading" "Events") (dict "kind" "person" "heading" "People") (dict "kind" "project" "heading" "Projects") }}
+      {{ with where $tags "kind" $group.kind }}
+        <h2>{{ $group.heading }}</h2>
+        <ul>
+          {{ range sort . "label" }}<li><a href="{{ .term_url }}">{{ .label }}</a></li>{{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

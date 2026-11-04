@@ -7,3 +7,236 @@
 .cta-group {
   justify-content: center;
 }
+
+.wing-gallery {
+  max-width: 830px;
+  padding-bottom: 3rem;
+}
+
+.wing-gallery-tag-page {
+  padding-top: 2rem;
+}
+
+.wing-gallery-year {
+  margin-top: 2.5rem;
+  scroll-margin-top: 5rem;
+}
+
+.wing-gallery-index {
+  margin-top: 1.25rem;
+}
+
+.wing-carousel {
+  position: relative;
+}
+
+.wing-carousel-ready .wing-carousel-slides {
+  display: grid;
+}
+
+.wing-carousel-ready [data-carousel-slide] {
+  // All captions and tags contribute to the row height, including those on inactive slides.
+  grid-area: 1 / 1;
+  min-width: 0;
+}
+
+.wing-carousel-ready [data-carousel-slide][inert]:not(.wing-carousel-leaving) {
+  visibility: hidden;
+
+  img {
+    display: none;
+  }
+}
+
+.wing-carousel-sliding .wing-carousel-slides {
+  overflow: clip;
+}
+
+.wing-gallery-frame,
+.wing-carousel-controls {
+  aspect-ratio: 16 / 10;
+}
+
+.wing-carousel-controls {
+  position: absolute;
+  z-index: 1;
+  inset: 0 0 auto;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.wing-carousel-controls[hidden] {
+  display: none;
+}
+
+.wing-carousel-buttons {
+  position: relative;
+  aspect-ratio: var(--wing-photo-ratio);
+}
+
+.wing-carousel-buttons,
+.wing-gallery-frame img {
+  // Fit the photo and its controls into the same 16:10 frame without cropping.
+  width: calc(62.5% * (var(--wing-photo-ratio)));
+  max-width: 100%;
+}
+
+.wing-carousel-buttons button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.wing-carousel-buttons button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 1px;
+  box-shadow: 0 0 0 4px #202020;
+}
+
+.wing-carousel-arrow,
+.wing-carousel-pause {
+  position: absolute;
+  background: rgba(0, 0, 0, .46);
+}
+
+.wing-carousel-arrow:hover,
+.wing-carousel-pause:hover {
+  background: rgba(0, 0, 0, .7);
+}
+
+.wing-carousel-arrow {
+  top: 50%;
+  width: clamp(34px, 7vw, 44px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.wing-carousel-arrow[data-carousel-previous] {
+  left: 8px;
+}
+
+.wing-carousel-arrow[data-carousel-next] {
+  right: 8px;
+}
+
+.wing-carousel-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: max-content;
+  max-width: calc(100% - 8px);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, .46);
+  transform: translateX(-50%);
+}
+
+.wing-carousel-dots button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.wing-carousel-dots button::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .56);
+  content: '';
+}
+
+.wing-carousel-dots button:hover::before,
+.wing-carousel-dots button[aria-current='true']::before {
+  background: white;
+}
+
+.wing-carousel-buttons .wing-carousel-pause {
+  top: 8px;
+  right: 8px;
+  min-height: 24px;
+  padding: 0 9px;
+  border-radius: 20px;
+  font-size: .75rem;
+}
+
+.wing-gallery-photo {
+  margin: 0 0 1rem;
+}
+
+.wing-gallery-frame {
+  position: relative;
+  touch-action: pan-y pinch-zoom;
+}
+
+.wing-gallery-frame img {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  margin: auto;
+  border-radius: .65rem;
+  box-shadow: 0 .25rem .55rem rgba(0, 0, 0, .17), 0 .75rem 1.5rem rgba(0, 0, 0, .12);
+}
+
+.wing-gallery-photo figcaption {
+  margin: 1rem auto 0;
+  padding: 0 .2rem;
+  text-align: center;
+}
+
+.wing-gallery-caption {
+  margin-bottom: .35rem;
+}
+
+.wing-gallery-caption a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+
+.wing-gallery-credit,
+.wing-gallery-source {
+  font-size: .75rem;
+}
+
+.wing-gallery-credit {
+  margin-bottom: .5rem;
+}
+
+.wing-gallery-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wing-gallery-photo .wing-gallery-tags {
+  justify-content: center;
+}
+
+.wing-gallery-tags a {
+  display: inline-block;
+  padding: .15rem .55rem;
+  border: 1px solid currentColor;
+  border-radius: 1rem;
+  font-size: .7rem;
+}
+
+.wing-gallery-tag-kind {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.wing-gallery-hero .wing-gallery-caption {
+  font-size: .85rem;
+}

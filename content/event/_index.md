@@ -1,6 +1,10 @@
 ---
 title: WING Events
 
+cascade:
+  design:
+    css_class: wing-media-page
+
 # Listing view
 view: compact
 

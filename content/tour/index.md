@@ -34,26 +34,28 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
-      - title: ACL'24 @ Thailand
-        content: "Current WING and alumni at ACL '24 in Thailand!"
+      - title: CAPRI at NUS
+        content: "Yisong Miao presents CAPRI at the 2026 NUS Summer Research Internship seminar."
         align: center
         background:
           image:
-            filename: acl24.jpg
+            filename: tour-capri-presentation.webp
+            position: center
+            size: contain
             filters:
               brightness: 0.7
-          position: right
-          color: '#666'
-      - title: Our group social event in Nov 2025
-        content: "We had a hike at Macritchie Reservoir!"
+          color: '#242424'
+      - title: Above the MacRitchie canopy
+        content: "WING members pause above the canopy during the November 2025 MacRitchie hike."
         align: center
         background:
           image:
-            filename: macritchie.jpeg
+            filename: tour-macritchie-canopy.webp
+            position: center
+            size: contain
             filters:
               brightness: 0.7
-          position: center
-          color: '#666'
+          color: '#242424'
       - title: WING at Kallang Bowl
         content: "Group outing on 16 October 2026"
         align: center

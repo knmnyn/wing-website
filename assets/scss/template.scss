@@ -10,6 +10,10 @@
 
 $wing-image-radius: .65rem;
 
+.wing-home-news .img-hover-zoom {
+  border-radius: $wing-image-radius;
+}
+
 .wing-gallery-frame img,
 .wing-media-page :is(.article-banner, .featured-image, .gallery-item, .stream-item img, .article-style img:not(.gallery-item img)) {
   border-radius: $wing-image-radius;

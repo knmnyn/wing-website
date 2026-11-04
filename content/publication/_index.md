@@ -1,6 +1,12 @@
 ---
 title: Publications
 
+cascade:
+  - _target:
+      kind: page
+    design:
+      css_class: wing-media-page
+
 # Listing view
 view: citation
 

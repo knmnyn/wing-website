@@ -32,6 +32,7 @@ sections:
     design:
       view: card
       columns: '1'
+      css_class: wing-home-news
   
   - block: markdown
     content:

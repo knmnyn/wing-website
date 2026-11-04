@@ -8,6 +8,24 @@
   justify-content: center;
 }
 
+$wing-image-radius: .65rem;
+
+.wing-gallery-frame img,
+.wing-media-page :is(.article-banner, .featured-image, .gallery-item, .stream-item img, .article-style img:not(.gallery-item img)) {
+  border-radius: $wing-image-radius;
+  box-shadow: 0 .25rem .55rem rgba(0, 0, 0, .17), 0 .75rem 1.5rem rgba(0, 0, 0, .12);
+}
+
+.wing-media-page .article-header-caption {
+  border-bottom-right-radius: $wing-image-radius;
+}
+
+.wing-media-page .article-container > .article-style {
+  // Give shadows room inside Hugo Blox's overflow-clipped article body.
+  margin-inline: -20px;
+  padding-inline: 20px;
+}
+
 .wing-gallery {
   max-width: 830px;
   padding-bottom: 3rem;
@@ -182,8 +200,6 @@
   inset: 0;
   height: auto;
   margin: auto;
-  border-radius: .65rem;
-  box-shadow: 0 .25rem .55rem rgba(0, 0, 0, .17), 0 .75rem 1.5rem rgba(0, 0, 0, .12);
 }
 
 .wing-gallery-photo figcaption {

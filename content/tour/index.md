@@ -54,6 +54,17 @@ sections:
               brightness: 0.7
           position: center
           color: '#666'
+      - title: WING at Kallang Bowl
+        content: "Group outing on 16 October 2026"
+        align: center
+        background:
+          image:
+            filename: kallang-bowl-2026-10-16.jpg
+            position: center
+            size: contain
+            filters:
+              brightness: 0.7
+          color: '#242424'
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''

@@ -15,6 +15,14 @@ doi: 10.18653/v1/2026.acl-long.1455
 links:
 - name: ACL Anthology
   url: https://aclanthology.org/2026.acl-long.1455/
+- name: arXiv
+  url: https://arxiv.org/abs/2606.13537
 url_pdf: https://aclanthology.org/2026.acl-long.1455.pdf
+url_code: https://github.com/tongyao-zhu/query-embedding-mix
 featured: true
+image:
+  caption: 'Two parallel query translations are encoded, interpolated at mixing ratio λ, and L2-normalized before retrieval.'
+  focal_point: 'Smart'
+  preview_only: false
+projects: ['code-mixed-retrieval']
 ---

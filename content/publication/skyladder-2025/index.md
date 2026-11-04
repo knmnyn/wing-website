@@ -24,4 +24,5 @@ featured: true
 image:
   caption: 'SkyLadder schedules pretraining from shorter to longer context windows.'
   preview_only: false
+projects: ['context-window-scheduling']
 ---

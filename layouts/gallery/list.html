@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{ partial "page_header.html" . }}
+  {{ $years := .RegularPages.GroupByDate "2006" }}
+  <div class="container wing-gallery">
+    <div class="article-style">{{ .Content }}</div>
+    <nav aria-label="Gallery index" class="wing-gallery-index">
+      <ul class="wing-gallery-tags">
+        {{ range $years }}
+          <li><a href="#year-{{ .Key }}">{{ .Key }}</a></li>
+        {{ end }}
+        {{ with site.GetPage "/gallery-tags" }}
+          <li><a href="{{ .RelPermalink }}">Browse tags</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ range $index, $year := $years }}
+      <section id="year-{{ .Key }}" class="wing-gallery-year">
+        <h2 id="heading-{{ .Key }}">{{ .Key }}</h2>
+        {{ partial "gallery/carousel.html" (dict "photos" .Pages "labelledby" (printf "heading-%s" .Key) "interval" (add 7600 (mul $index 650))) }}
+      </section>
+    {{ end }}
+  </div>
+  <script defer src="{{ "js/gallery.js" | relURL }}"></script>
+{{ end }}

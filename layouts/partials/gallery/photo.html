@@ -1,0 +1,51 @@
+{{ $photo := .photo }}
+{{ $image := false }}
+{{ with $photo.Params.source_page }}
+  {{ with site.GetPage . }}
+    {{ $image = .Resources.GetMatch $photo.Params.source_image }}
+  {{ end }}
+{{ else }}
+  {{ $image = resources.Get $photo.Params.source_image }}
+{{ end }}
+{{ if not $image }}
+  {{ errorf "Gallery photo %q has a missing image: %q on %q" $photo.Path $photo.Params.source_image $photo.Params.source_page }}
+{{ else }}
+  {{ $widths := slice }}
+  {{ range slice 480 800 1280 1600 }}
+    {{ $widths = $widths | append (math.Min . $image.Width | int) }}
+  {{ end }}
+  {{ $srcset := slice }}
+  {{ $small := false }}
+  {{ range uniq $widths }}
+    {{ $variant := $image.Resize (printf "%dx webp q82" .) }}
+    {{ $srcset = $srcset | append (printf "%s %dw" $variant.RelPermalink $variant.Width) }}
+    {{ $small = or $small $variant }}
+  {{ end }}
+  {{ $tags := $photo.GetTerms "gallery-tags" }}
+  {{ $yearTag := printf "year-%s" ($photo.Date.Format "2006") }}
+  {{ if not (in (index $photo.Params "gallery-tags") $yearTag) }}
+    {{ errorf "Gallery photo %q needs the tag %q for its photo date" $photo.Path $yearTag }}
+  {{ end }}
+  <figure class="wing-gallery-photo">
+    <div class="wing-gallery-frame" style="--wing-photo-ratio: {{ $image.Width }} / {{ $image.Height }}" data-carousel-swipe>
+      <img src="{{ $small.RelPermalink }}" srcset="{{ delimit $srcset ", " }}"
+        sizes="{{ if .hero }}(min-width: 1200px) 540px, (min-width: 768px) 45vw, 92vw{{ else }}(min-width: 992px) 800px, 92vw{{ end }}"
+        width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $photo.Params.alt }}"
+        {{ if .eager }}fetchpriority="high"{{ else }}loading="lazy"{{ end }} decoding="async" draggable="false">
+    </div>
+    <figcaption>
+      <p class="wing-gallery-caption" data-carousel-caption>
+        {{ if .link }}<a href="{{ $photo.RelPermalink }}">{{ $photo.Params.caption }}</a>{{ else }}{{ $photo.Params.caption }}{{ end }}
+      </p>
+      {{ with $photo.Params.credit }}<p class="wing-gallery-credit">Photo credit: {{ . }}</p>{{ end }}
+      {{ with $tags }}
+        <ul class="wing-gallery-tags" aria-label="Photo tags">
+          {{ range . }}
+            {{ $tag := partial "gallery/tag.html" . }}
+            <li><a href="{{ .RelPermalink }}"><span class="wing-gallery-tag-kind">{{ $tag.kind }}</span> {{ $tag.label }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </figcaption>
+  </figure>
+{{ end }}

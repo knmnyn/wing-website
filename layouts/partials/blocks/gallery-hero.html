@@ -1,0 +1,15 @@
+<div class="row align-items-center">
+  <div class="col-12 col-md-6 text-center text-md-left mb-4 mb-md-0">
+    <h1 class="hero-title">{{ .wcBlock.content.title | markdownify }}</h1>
+    {{ with site.GetPage "/gallery" }}
+      <a class="btn btn-primary" href="{{ .RelPermalink }}">View full gallery</a>
+    {{ end }}
+  </div>
+  <div class="col-12 col-md-6 wing-gallery-hero">
+    {{ with site.GetPage "/gallery" }}
+      {{ $featured := where .RegularPages "Params.featured_order" "ne" nil }}
+      {{ partial "gallery/carousel.html" (dict "photos" (sort $featured "Params.featured_order") "label" "Featured gallery photos" "interval" 6900 "hero" true) }}
+    {{ end }}
+  </div>
+</div>
+<script defer src="{{ "js/gallery.js" | relURL }}"></script>

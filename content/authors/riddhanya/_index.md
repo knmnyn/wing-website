@@ -14,7 +14,7 @@ date: '2026-10-01'
 superuser: false
 
 # Role/position
-role: Software Engineer
+role: Research Intern (Aug '26)
 
 # Organizations/Affiliations
 organizations:

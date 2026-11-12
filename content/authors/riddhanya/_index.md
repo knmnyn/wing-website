@@ -8,7 +8,7 @@ first_name: Riddhanya
 last_name: Senapathi
 
 # Date for sorting
-date: '2026-10'
+date: '2026-10-01'
 
 # Is this the primary user of the site?
 superuser: false

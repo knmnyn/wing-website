@@ -13,7 +13,7 @@ date: '2024-07-01'
 superuser: false
 
 # Role/position
-role: Research Fellow (Jul '24)
+role: Staff Alumni (Jul '24–'26); Research Fellow (Jul '24–'26)
 
 # Organizations/Affiliations
 organizations:
@@ -68,7 +68,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Principal Investigator / Research Fellows / Staff
+  - Staff Alumni
 #  - Researchers
 ---
 

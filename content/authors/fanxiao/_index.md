@@ -13,7 +13,7 @@ date: '2025-09-01'
 superuser: false
 
 # Role/position
-role: CSC Visiting Student (Sep '25)
+role: CSC Visiting Student Alumnus (Sep '25–Sep '26)
 
 # Organizations/Affiliations
 organizations:
@@ -68,7 +68,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Visitors / Interns
+  - Undergraduate / Intern Alumni
 #  - Researchers
 ---
 

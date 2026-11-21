@@ -13,7 +13,7 @@ date: '2026-05-01'
 superuser: false
 
 # Role/position
-role: SRI Research Intern (May '26)
+role: SRI Research Intern Alumnus (May '26–Aug '26)
 
 # Organizations/Affiliations
 organizations:
@@ -58,6 +58,6 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Visitors / Interns
+  - Undergraduate / Intern Alumni
 #  - Researchers
 ---

@@ -13,7 +13,7 @@ date: '2026-01-01'
 superuser: false
 
 # Role/position
-role: Doctoral Student (Jan '26)
+role: Doctoral Student (Jan '26)<BR/>Co-Supervised by <A HREF="https://liuanji.github.io/">Anji Liu</A>
 
 # Organizations/Affiliations
 organizations:

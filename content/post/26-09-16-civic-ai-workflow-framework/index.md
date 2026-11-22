@@ -1,7 +1,7 @@
 ---
 title: "CIVIC-AI whitepaper asks when AI truly augments work"
 date: 2026-09-16
-authors: [jiaying]
+authors: [jiaying, yajing, yisong]
 ---
 
 When does AI improve work for people? A new CIVIC-AI whitepaper proposes assessing whole workflows, including checking, rework, and recovery, rather than relying on headline productivity figures or adoption rates alone.

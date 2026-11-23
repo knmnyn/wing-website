@@ -15,11 +15,14 @@ abstract: We propose KAHAN, a knowledge-augmented hierarchical framework that sy
 summary: 'A knowledge-augmented hierarchical framework that extracts insights from tabular data at entity, pairwise, group, and system levels for financial data narration.'
 tags: ["Data-to-text", "Tables", "Complex Reasoning", "LLMs", "Financial NLP"]
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2025.findings-emnlp.1405/
 url_pdf: 'https://aclanthology.org/2025.findings-emnlp.1405.pdf'
 url_code: 'https://github.com/yajingyang/kahan'
 # url_slides: ''
 projects:
 - analytical-reporting
+image:
+  caption: 'KAHAN combines entity-level analysis, multi-level insight synthesis and narrative generation. Figure 2 from Yang et al. (2025), CC BY 4.0.'
+  preview_only: false
 ---

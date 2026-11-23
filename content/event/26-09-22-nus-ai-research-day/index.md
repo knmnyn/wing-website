@@ -35,6 +35,4 @@ The research was presented on **Tuesday, 22 September 2026**, from **11:00 am to
 
 **Paper:** [Camellia: Benchmarking Cultural Biases in LLMs for Asian Languages](https://arxiv.org/abs/2510.05291) (accepted at EMNLP 2026 Main Conference).
 
-![WING members and collaborators at NUS AI Research Day, with the Camellia poster on display.](featured.jpg)
-
 _Based on [WING's event post](https://x.com/wing_nus/status/2117185961406632044) and [Yisong Miao's post](https://x.com/YisongMiao/status/2117188135100760173)._

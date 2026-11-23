@@ -28,8 +28,6 @@ We enjoyed both the beautiful river view and the pizza! We were happy to see the
 
 _Below is a gallery of the outing, photo credit to Yajing, Glenda, and Yisong!_
 
-{{< figure src="featured.jpg" alt="WING 2026 spring outing group at Clarke Quay" >}}
-
 {{< figure src="wing-outing-1.jpg" alt="WING members enjoying the Clarke Quay river view" >}}
 
 {{< figure src="wing-outing-2.jpg" alt="WING members sharing pizza during the outing" >}}

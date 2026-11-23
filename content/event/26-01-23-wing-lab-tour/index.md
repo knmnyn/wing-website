@@ -42,5 +42,3 @@ _Below is a gallery of the lab tour, photo credit to Sahaj, Yisong, and Min!_
 {{< figure src="lab-tour-3.jpg" alt="Participants exploring the WING lab space" >}}
 
 {{< figure src="lab-tour-4.jpg" alt="Group photo from the WING lab tour" >}}
-
-{{< figure src="featured.png" alt="AAAI 2026 participants visiting WING lab" >}}

@@ -25,7 +25,6 @@ all_day: true
 
 A gallery of additional photos of the outing is included below.
 
-![WING outing photo](g1.jpeg)
 ![WING outing photo](g2.jpeg)
 ![WING outing photo](m1.jpeg)
 ![WING outing photo](g3.jpeg)

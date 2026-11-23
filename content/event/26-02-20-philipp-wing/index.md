@@ -36,8 +36,6 @@ We thank Philipp for the inspiring and thought-provoking talk!
 
 _Below is a gallery of the seminar, photo credit to Sahaj!_
 
-{{< figure src="featured.jpeg" alt="Philipp Mayr introducing research projects at WING" >}}
-
 {{< figure src="fig-1.jpg" alt="Philipp Mayr introducing research projects at WING" >}}
 
 {{< figure src="fig-2.jpg" alt="Philipp Mayr introducing research projects at WING" >}}

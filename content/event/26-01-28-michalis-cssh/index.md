@@ -34,8 +34,6 @@ We also look beyond ranking results, discussing evidence driven answers and imme
 
 _Below is a gallery of the seminar, photo credit to Min and Yisong!_
 
-{{< figure src="featured.jpeg" alt="Michalis Vlachos at CSSH Seminar" >}}
-
 {{< figure src="michalis-talk-1.jpeg" alt="Michalis Vlachos presenting at CSSH Seminar" >}}
 
 {{< figure src="michalis-talk-2.jpeg" alt="Michalis Vlachos presenting at CSSH Seminar" >}}

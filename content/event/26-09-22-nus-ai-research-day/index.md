@@ -10,7 +10,7 @@ address:
   postcode: '119391'
   country: Singapore
 
-authors: [sahajpreet, yisong]
+authors: [sahajpreet]
 tags: ["NUS AI Research Day", "Cultural Bias", "Large Language Models", "Asian Languages", "Camellia"]
 
 date: '2026-09-22T11:00:00+08:00'
@@ -27,7 +27,7 @@ image:
   focal_point: Center
 ---
 
-At NUS AI Research Day 2026, **[Sahajpreet Singh](https://wing.comp.nus.edu.sg/author/sahajpreet-singh/)** presented *Camellia: Benchmarking Cultural Biases in LLMs for Asian Languages* and received the **Best Poster Presenter Award**. The university-wide event brought together AI researchers and participants to share their work; WING member [Yisong Miao](https://wing.comp.nus.edu.sg/author/yisong-miao/) served on the programme committee.
+At NUS AI Research Day 2026, **[Sahajpreet Singh](https://wing.comp.nus.edu.sg/author/sahajpreet-singh/)** presented *Camellia: Benchmarking Cultural Biases in LLMs for Asian Languages* and received the **Best Poster Presenter Award**. The university-wide event brought together AI researchers and participants to share their work.
 
 Camellia is a benchmark for studying how large language models handle cultural context across nine Asian languages and six cultures. It contains 19,530 manually annotated entities and 2,173 masked social-media contexts. The paper evaluates models on cultural context adaptation, sentiment association, and entity extractive question answering. Its results show that models can struggle to adapt to cultural context and that performance varies across models and languages.
 

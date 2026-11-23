@@ -13,7 +13,7 @@ date: '2020-08-01'
 superuser: false
 
 # Role/position
-role: Postdoctoral Research Fellow (Nov '26); IPP Doctoral Student ('20–'26)
+role: "Postdoctoral Research Fellow (Nov '26); IPP Doctoral Alumna (Nov '26). Thesis: Towards Expert-Level Financial Narration with Large Language Models."
 
 # Organizations/Affiliations
 organizations:
@@ -58,7 +58,8 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Principal Investigator / Research Fellows / Staff
+  - Doctoral Alumni
 #  - Researchers
 ---
 
-Yajing is a Postdoctoral Research Fellow at the National University of Singapore, having previously pursued her Ph.D. in the Industrial PhD Programme at the School of Computing, National University of Singapore, and Rio Tinto. She is a member of the Web Information Retrieval / Natural Language Processing Group (WING). Her research focuses on natural language processing, with a specific focus on data-to-text generation and data narration.
+Yajing is a Postdoctoral Research Fellow at the National University of Singapore. She completed her Ph.D. in the Industrial PhD Programme at the School of Computing, National University of Singapore, and Rio Tinto. She is a member of the Web Information Retrieval / Natural Language Processing Group (WING). Her research focuses on natural language processing, with a specific focus on data-to-text generation and data narration.

@@ -7,13 +7,14 @@ first_name: Yijun
 last_name: Li
 
 # Date for sorting
-date: '2026-11-01'
+date: '2027-01-01'
+publishDate: '2026-11-01'
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Masters Student (Nov '26)
+role: Masters Student (Jan '27)
 
 # Organizations/Affiliations
 organizations:
@@ -21,7 +22,7 @@ organizations:
     url: 'http://www.comp.nus.edu.sg'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Masters Student November 2026 Intake
+bio: Masters Student January 2027 Intake
 
 interests:
   - Search Agents
@@ -32,7 +33,7 @@ education:
   courses:
     - course: MComp in Artificial Intelligence
       institution: National University of Singapore
-      year: 2026-Now
+      year: 2027-Now
     - course: B.Eng. in Computer Science and Technology
       institution: Harbin Institute of Technology, Shenzhen
       year: 2022-2026
